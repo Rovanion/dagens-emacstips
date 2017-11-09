@@ -17,3 +17,12 @@
    tillbaka utan att flytta markören. Bra för att kolla upp
    t.ex. tidigare användningar av en variabel för att sedan fortsätta
    skriva utan att behöva orientera sig i koden igen.
+
+5. `C-s söko C-w`: Kompletterar söktermen till slutet på ordet som
+   pekaren står vid. Så har du börjat skriva in `söko` och pekaren
+   därmed står likt `söko|rd` blir söktermen `sökord` när du trycker
+   `C-w`.
+
+   Kan användas som en fattig mans diff mellan två närliggande delar
+   av en text, bara trycka ner `C-w` tills den andra delen inte längre
+   matchar.
