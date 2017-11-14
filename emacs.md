@@ -27,3 +27,6 @@
 	Kan användas som en fattig mans diff mellan två närliggande delar
 	av en text, bara trycka ner `C-w` tills den andra delen inte
 	längre matchar.
+
+6.  `C-SPC` följt av markeringen av en region samt `C-_` kör undo,
+    fast bara i den markerade regionen.
