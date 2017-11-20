@@ -4,5 +4,5 @@
 	`git commit -p` finns även det för den som känner sig lite mera
 	rakt på sak.
 
-2.  `git commit -v`: Visar diffen du commit:ar under listan på filer
-	du commit:a. Världens bästa flagga påstår författaren.
+2.  `git commit -v`: Visar diffen du commit:ar under listan på filer i
+	commitmeddelandestextfilen. Världens bästa flagga enligt utsago.
