@@ -30,3 +30,14 @@
 
 6.  `C-SPC` följt av markeringen av en region samt `C-_` kör undo,
     fast bara i den markerade regionen.
+
+7.  `M-x term` startar upp en fullvärd smart terminal i vilken man kan
+    köra program som vill skriva om hela terminalytan, t.ex. less,
+    htop, git grep eller varför inte emacs. Detta till skillnad från
+    `M-x shell` eller `M-x eshell` som startar så kallade dumma
+    terminaler.
+
+    Eftersom att term-mode sänder alla tecken till skalet per default,
+    likt screen, behövs det en flyktsekvens: `C-c`. `C-c` sänder `C-x`
+    till den ovanliggande emacsprocessen så `C-x o` blir i term-mode
+    `C-c o`.
