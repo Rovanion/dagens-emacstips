@@ -41,3 +41,7 @@
     likt screen, behövs det en flyktsekvens: `C-c`. `C-c` sänder `C-x`
     till den ovanliggande emacsprocessen så `C-x o` blir i term-mode
     `C-c o`.
+
+8.  `C-x h` markerar hela buffern.
+
+9.  `C-<` går till början av buffern, `C->` går till slutet av buffern.
