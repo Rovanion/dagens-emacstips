@@ -44,4 +44,4 @@
 
 8.  `C-x h` markerar hela buffern.
 
-9.  `C-<` går till början av buffern, `C->` går till slutet av buffern.
+9.  `M-<` går till början av buffern, `M->` går till slutet av buffern.
