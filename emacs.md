@@ -45,3 +45,8 @@
 8.  `C-x h` markerar hela buffern.
 
 9.  `M-<` går till början av buffern, `M->` går till slutet av buffern.
+
+10. Emacs har en inbyggd profilerare för sig själv. Så skulle du finna
+    att någonting går långsammare än det borde kan du alltid skriva
+    `M-x profiler start`, göra saken som är ovanligt seg och avsluta
+    det hela med `M-x profiler-report`.
