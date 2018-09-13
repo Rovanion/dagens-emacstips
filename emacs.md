@@ -50,3 +50,11 @@
     att någonting går långsammare än det borde kan du alltid skriva
     `M-x profiler start`, göra saken som är ovanligt seg och avsluta
     det hela med `M-x profiler-report`.
+
+11. Tramp låter dig ansluta till och läsa filer på system som inte har
+    emacs. T.ex. kan du med paketet [docker-tramp] installerat ansluta
+    till dockerbehållare på din lokala maskin och ändra filer utan att
+    behöva häda.
+
+
+	[docker-tramp]: https://github.com/emacs-pe/docker-tramp.el
