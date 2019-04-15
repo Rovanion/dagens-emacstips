@@ -43,3 +43,27 @@
 
 	För att se vad som står köat för nästa commit kan du använda `git
     diff --cached`.
+
+6.  Det går att ändra ordningen på commits när man kör `git rebase`.
+
+	Detta kan till exempel komma till hands om du vill skapa en commit
+    som är den näst senaste på din nuvarande gren. Låt säga din
+    historik ser ut som följer:
+
+	```
+	* c2d3bd1 - (HEAD -> master) Stor funktion X.
+    * ee8149f - Någon annan fin ändring som behövdes.
+	```
+
+	Det finns testsnurra som kör någonstans som sätts igång av att du
+    trycker upp kod på gitserver. Så du har börjat ackumulera
+    förändringar relaterat till X i nuvarande HEAD av master
+    `c2d3bd1`. Men så finner du en till X orelaterad förändring som du
+    vill göra, men kommer glömma bort om du inte gör den på
+    direkten. Då skulle det vara fint att kunna lägga en commit mellan
+    `ee8149f` och `c2d3bd1`.
+
+	Detta gör lättast genom att du kör `git commit` som vanligt men
+    sedan kör `git rebase HEAD~2 -i` och i din textbuffer sedan ändrar
+    ordningen på `c2d3bd1` och din nyligen skapade commit så att den nya
+    hamnar innan `c2d3bd1`.
